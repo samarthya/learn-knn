@@ -38,3 +38,48 @@ This repository teaches machine learning fundamentals through a complete, beginn
 Imagine comparing houses using "number of bedrooms" (2-5) and "price" ($200,000-$500,000). Price would dominate because bigger numbers! Scaling fixes this by making all measurements comparable.
 
 **Learn more**: [Why Feature Scaling Matters](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_scaling_importance.html)
+
+---
+
+### **Part 2: Finding the Optimal K Value**
+
+**Objective**: Learn how to tune your model for best performance
+
+**What you'll do**:
+
+- Test k values from 1 to 30
+- Plot training vs test accuracy
+- Identify the "sweet spot" that balances complexity and generalization
+- Understand the bias-variance tradeoff
+
+**Layman explanation**: If k=1 (look at only 1 neighbor), you're being too picky - like judging an entire neighborhood by one house. If k=30 (too many neighbors), you're averaging out important differences. The optimal k is like Goldilocks - just right!
+
+**Key concept - Overfitting vs Underfitting**:
+
+- **Small k**: Memorizes training data (like cramming for a test without understanding)
+- **Large k**: Too general (like saying "all animals are basically the same")
+- **Optimal k**: Captures patterns without memorizing noise
+
+**Learn more**: [Bias-Variance Tradeoff Explained](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/)
+
+---
+
+### **Part 3: KNN for Regression**
+
+**Objective**: Use k-NN to predict continuous values instead of categories
+
+**What you'll do**:
+
+- Predict penguin body mass (a number, not a category)
+- Learn different evaluation metrics (MSE, R²)
+- Visualize prediction accuracy with scatter plots
+
+**Layman explanation**: Instead of asking "What species is this penguin?" (classification), you're asking "How much does this penguin weigh?" (regression). Same algorithm, different question!
+
+**Key concept - R² Score**:
+
+R²=1.0 means perfect predictions. R²=0.0 means you're no better than just guessing the average. Most real models fall between 0.7-0.95.
+
+**Learn more**: [Understanding R² Score](https://statisticsbyjim.com/regression/interpret-r-squared-regression/)
+
+---
